@@ -3,5 +3,5 @@
 ### Testing
 ```npm test``` - starts app with nodemon and restarts on changes
 
-### Start
+### Production
 ```npm start``` - starts app
