@@ -1,0 +1,44 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "description": "API DESCRIPTION",
+    "version": "1.0.0",
+    "title": "express template"
+  },
+  "paths": {
+    "/api/route": {
+      "get": {
+        "tags": ["test routes"],
+        "summary": "test route summary",
+        "description": "test route description",
+        "operationId": "test",
+        "produces": ["application/json"],
+        "parameters": [{
+          "name": "input",
+          "in": "string",
+          "description": "input description",
+          "required": true,
+          "type": "string"
+        }],
+        "responses": {
+          "200": {
+            "description": "successful operation",
+            "examples": {
+              "response": {
+                "input": "abcd",
+                "status_code": 200,
+                "data": {}
+              }
+            }
+          },
+          "420": {
+            "description": "error with external sources"
+          },
+          "500": {
+            "description": "internal server error"
+          }
+        }
+      }
+    }
+  }
+}

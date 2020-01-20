@@ -1,0 +1,10 @@
+<div class="jumbotron mt-5">
+  <h1 class="display-3 text-center">Profile Information!</h1>
+  <p class="lead text-center">This is the data we have in the session </p>
+  <hr class="my-4">
+  {{#each session }}
+    {{#if_not_eq @key 'cookie'}}
+    <p class="text-center">{{ @key }}: {{ this }}</p>
+    {{/if_not_eq}}
+  {{/each}}
+</div>

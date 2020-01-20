@@ -1,0 +1,26 @@
+{
+  "name": "express-template",
+  "version": "1.0.0",
+  "description": "template using handlebars and express",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon server.js --ext js,json,md,hbs,css",
+    "start": "node server.js"
+  },
+  "author": "Matt Martin",
+  "license": "MIT",
+  "homepage": "",
+  "devDependencies": {
+    "eslint": "latest",
+    "eslint-config-google": "latest",
+    "nodemon": "latest"
+  },
+  "dependencies": {
+    "dotenv": "latest",
+    "express": "latest",
+    "express-handlebars": "latest",
+    "express-mysql-session": "latest",
+    "express-session": "latest",
+    "swagger-ui-express": "latest"
+  }
+}
